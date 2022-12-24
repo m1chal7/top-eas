@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a Sketch</title>
+    
+</head>
+<style>
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .grid-wrapper {
+        display: grid;
+        max-width: 600px;
+        background: white;
+        width: 100%;
+        height: 100%;
+        max-height: 600px;
+    }
+    .grid-wrapper div {
+        border: 1px solid black;
+       
+        
+    }
+    .hovered {
+        background: red;
+    }
+</style>
+<body>
+    <main>
+        <div class="grid-wrapper"></div>
+        <button class="reset">RESET</button>
+    </main>
+    <script src="eas.js"></script>
+</body>
+</html>
